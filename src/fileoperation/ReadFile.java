@@ -2,9 +2,10 @@ package fileoperation;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class ReadFile {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         FileReader fr = null;
         BufferedReader br = null;
         String path = "/Users/peoplentech/develop/SeleniumJuly2018/class-notes/space.txt";
@@ -21,6 +22,14 @@ public class ReadFile {
             }
         }catch(Exception ex){
             System.out.print("File is not readable");
+        }
+        finally{
+            if(fr != null){
+                fr.close();
+            }
+            if(br != null){
+                br.close();
+            }
         }
     }
 }
