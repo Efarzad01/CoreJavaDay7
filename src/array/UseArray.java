@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class UseArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        sc.close();
         Random random = new Random();
         int [] array = new int[4000];
         System.out.println("plz enter numbers: ");
