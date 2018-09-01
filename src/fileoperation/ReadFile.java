@@ -19,6 +19,7 @@ public class ReadFile {
             String data="";
             while((data = br.readLine()) != null){
                  System.out.println(data);
+                System.out.println("demofile");
             }
         }catch(Exception ex){
             System.out.print("File is not readable");
